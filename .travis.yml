@@ -55,7 +55,7 @@ cache:
     - $HOME/yarn.lock
 before_install:
   - ./dev/travis/before_install.sh
-  - chmod +x ./dev/travis/before_script.sh
+  - sudo chmod +x ./dev/travis/before_script.sh
 install: composer install --no-interaction
 before_script: ./dev/travis/before_script.sh
 script:
