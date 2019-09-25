@@ -31,6 +31,7 @@ if [ $TEST_SUITE == "js" ]; then
     node --version
 
     npm install -g yarn
+    npm install grunt-cli -g
     yarn global add grunt-cli
 fi
 
