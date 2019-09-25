@@ -57,7 +57,7 @@ before_install:
   - ./dev/travis/before_install.sh
 install: composer install --no-interaction
 before_script: 
-  - - chmod +x dev/travis/before_script.sh
+  - chmod +x dev/travis/before_script.sh
   - ./dev/travis/before_script.sh
 script:
   # Set arguments for variants of phpunit based tests; '|| true' prevents failing script when leading test fails
